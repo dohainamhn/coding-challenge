@@ -1,0 +1,57 @@
+@import '../../Variables.scss'; 
+
+.task-description {
+  &__title {
+    font-size: 0.9rem;
+    height: 1.56rem;
+    margin-top: 2rem;
+  }
+  &__content {
+    width: 100%;
+    min-height: 10rem;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  textarea {
+    padding: 0.2rem;
+  }
+}
+.task-bottom {
+  display: flex;
+  margin-top: 1.5rem;
+  flex-direction: column;
+  .single-select {
+    margin-top: 1.5rem;
+  }
+  @media (min-width: $tablet-screen-size) {
+    flex-direction: row;
+    justify-content: space-between;
+    .single-select {
+      margin-top: unset;
+    }
+    .single-select, .date-picker-container {
+      width: 18rem;
+    }
+  }
+  @media (min-width: $laptop-screen-size) {
+    .single-select, .date-picker-container {
+      width: 12.6rem;
+    }
+  }
+  @media (min-width: $large-laptop-screen-size) {
+    .single-select, .date-picker-container {
+      width: 16rem;
+    }
+  }
+}
+.submit-btn{
+  margin-top: 4rem;
+  border: none;
+  outline: none;
+  background-color: #5CB85C;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  color: #ffff;
+  cursor: pointer;
+}

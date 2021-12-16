@@ -1,0 +1,22 @@
+.custom-input{
+  .input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    padding: 0 0.7rem;
+    outline: none;
+    border: 1px solid #BDBDBD;
+  }
+  .input-error{
+    border: 1px solid #ff2626;
+  }
+  .hidden {
+    display: none;
+  }
+  .error-text{
+    display: block;
+    margin-top: 0.5rem;
+    color: #ff2626;
+  }
+}

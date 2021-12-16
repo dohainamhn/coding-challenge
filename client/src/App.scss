@@ -1,0 +1,28 @@
+@import './Variables.scss'; 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.home {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  @media (min-width: $laptop-screen-size) {
+    grid-template-columns: 50% 50%;
+    // width: 100%;
+    // display: grid;
+  }
+}
+
+.grid-item{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.label {
+  font-size: 0.9rem;
+  height: 1.56rem;
+}

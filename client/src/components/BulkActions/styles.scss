@@ -1,0 +1,38 @@
+@mixin btn ($color) {
+  height: 2rem;
+  width: 6.8rem;
+  color: #ffff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: $color;
+}
+.bulk-actions {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 5.12rem;
+  border-top: 1px solid #111;
+  width: 100%;
+  background-color: #E0E0E0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  h4 {
+    font-size: 1rem;
+    color: #505050;
+    font-weight: 400;
+  }
+  &__btn {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    .done-btn {
+      @include btn(#2196F3)
+    }
+    .remove-btn {
+      @include btn(#D9534F)
+    }
+  }
+}

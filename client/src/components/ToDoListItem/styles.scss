@@ -1,0 +1,82 @@
+@import '../../Variables.scss'; 
+
+@mixin btn($color) {
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 1.6rem;
+  background-color: $color;
+  width: 4rem;
+  cursor: pointer;
+  @media (min-width: $mobile-screen-size) {
+    width: 5rem;
+  }
+}
+
+.todo-list-item {
+  margin-top: 1rem;
+  border: 1px solid #111;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    @media (min-width: $mobile-screen-size) {
+      padding: 1rem;
+    }
+    border-bottom: 1px solid #111;
+    &__left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .check-box {
+        img {
+          cursor: pointer;
+        }
+      }
+      .title {
+        margin-left: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #333333;
+        max-width: 5.3rem;
+        @media (min-width: $mobile-screen-small-size) {
+          max-width: 6rem;
+        }
+        @media (min-width: $mobile-screen-size) {
+          max-width: 6.5rem;
+        }
+        @media (min-width: $tablet-screen-size) {
+          max-width: 15rem;
+        }
+        @media (min-width: $laptop-screen-size) {
+          max-width: 12rem;
+        }
+        @media (min-width: $large-laptop-screen-size) {
+          max-width: 15rem;
+        }
+      }
+    }
+    &__right {
+      .detail-btn {
+        @include btn(#00BCD4);
+      }
+      .remove-btn {
+        @include btn(#D9534F);
+        margin-left: 1rem;
+      }
+    }
+  }
+  .content{
+    padding: 1.6rem;
+  }
+}
+
+.checkbox-custom {
+  display: none;
+}
+
+.border-bottom-unset {
+  border-bottom: unset !important
+}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    /* Type Checking */
+    "strict": true, /* Enable all strict type-checking options. */
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node"
+  },
+  // "include": [
+  //   "src"
+  // ]
+}
